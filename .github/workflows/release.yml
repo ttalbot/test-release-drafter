@@ -42,8 +42,6 @@ jobs:
 
       - uses: release-drafter/release-drafter@master
         with:
-          tag-template: 'fds@$NEXT_PATCH_VERSION'
-          tag-prefix: 'fds@'
           version: ${{ steps.version.outputs.version }}
           publish: true
         env:
