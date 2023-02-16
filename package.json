@@ -1,0 +1,23 @@
+{
+  "name": "test-release-drafter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "workspaces":[
+    "packages/pkg1",
+    "packages/pkg2"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ttalbot/test-release-drafter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ttalbot/test-release-drafter/issues"
+  },
+  "homepage": "https://github.com/ttalbot/test-release-drafter#readme"
+}
