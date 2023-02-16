@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/ttalbot/test-release-drafter/issues"
   },
-  "homepage": "https://github.com/ttalbot/test-release-drafter#readme"
+  "homepage": "https://github.com/ttalbot/test-release-drafter#readme",
+  "volta": {
+    "node": "18.14.0"
+  }
 }
