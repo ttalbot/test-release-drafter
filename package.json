@@ -14,8 +14,8 @@
     "type": "git",
     "url": "git+https://github.com/ttalbot/test-release-drafter.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Thomas Talbot",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/ttalbot/test-release-drafter/issues"
   },
