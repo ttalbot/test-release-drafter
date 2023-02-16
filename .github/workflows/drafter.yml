@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: release-drafter/release-drafter@v5
         with:
-          tag-template: ${{fds@$NEXT_PATCH_VERSION}}
-          tag-prefix: "fds@"
+          tag-template: 'fds@$NEXT_PATCH_VERSION'
+          tag-prefix: 'fds@'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
