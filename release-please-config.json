@@ -1,0 +1,23 @@
+{
+  "bootstrap-sha": "d56640d7508684935e510a39579fa404b15ca05d",
+  "packages": {
+    ".": {
+      "component": "root"
+    },
+    "packages/pkg1": {
+      "component": "pkg1"
+    },
+    "packages/pkg2": {
+      "component": "pkg2"
+    }
+  },
+  "plugins": [
+    {
+      "type": "linked-versions",
+      "group-name": "fds",
+      "components": [
+        "root", "pkg1", "pkg2"
+      ]
+    }
+  ]
+}
