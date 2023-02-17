@@ -17,6 +17,7 @@ jobs:
       - uses: release-drafter/release-drafter@v5
         if: steps.salsify.outputs.tag
         with:
+          version: ${{ steps.salsify.outputs.current-version }}
           publish: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
