@@ -1,14 +1,13 @@
 {
   "name": "test-release-drafter",
-  "version": "1.15.0",
+  "version": "2.0.0",
   "description": "",
   "main": "index.js",
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
-    "release": "npm version --workspaces --include-workspace-root --git-tag-version=false",
-    "postversion": "git push && git push --tags"
+    "release": "npm version --workspaces --include-workspace-root --git-tag-version=false"
   },
   "repository": {
     "type": "git",
