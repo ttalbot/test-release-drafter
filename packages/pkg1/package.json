@@ -3,9 +3,6 @@
   "version": "1.15.1",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: nothing \" && exit 1"
-  },
   "author": "Thomas Talbot",
   "license": "MIT"
 }
