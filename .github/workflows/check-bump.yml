@@ -11,5 +11,12 @@ jobs:
         with:
           fetch-depth: 2
       - uses: salsify/action-detect-and-tag-new-version@v2
+        id: salsify
         with:
           tag-template: 'fds@{VERSION}'
+      - uses: release-drafter/release-drafter@v5
+        if: steps.salsify.outputs.tag
+        with:
+          publish: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
