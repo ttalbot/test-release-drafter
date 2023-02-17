@@ -7,7 +7,7 @@
     "packages/*"
   ],
   "scripts": {
-    "version": "npm run version",
+    "release": "npm version --workspaces --include-workspace-root --git-tag-version=false",
     "postversion": "git push && git push --tags"
   },
   "repository": {
