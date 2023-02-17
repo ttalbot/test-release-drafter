@@ -1,14 +1,13 @@
 {
   "name": "test-release-drafter",
-  "version": "1.15.1",
+  "version": "1.15.0",
   "description": "",
   "main": "index.js",
   "workspaces": [
-    "packages/pkg1",
-    "packages/pkg2"
+    "packages/*"
   ],
   "scripts": {
-    "test": "echo \"Error: no  \" && exit 1",
+    "version": "npm run version",
     "postversion": "git push && git push --tags"
   },
   "repository": {
