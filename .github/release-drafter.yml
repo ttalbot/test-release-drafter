@@ -1,9 +1,11 @@
+name-template: 'fds@$RESOLVED_VERSION'
+tag-template: 'fds@$RESOLVED_VERSION'
+tag-prefix: 'fds@'
 template: |
   ## What’s Changed
 
   $CHANGES
-tag-template: 'fds@$RESOLVED_VERSION'
-tag-prefix: 'fds@'
+  
 version-resolver:
   major:
     labels:
