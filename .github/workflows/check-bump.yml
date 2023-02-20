@@ -19,5 +19,6 @@ jobs:
         with:
           version: ${{ steps.salsify.outputs.current-version }}
           publish: true
+          commitish: '876dccbfdaf69b2d6bdb0f6afd2952c7c3fe64e7'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
