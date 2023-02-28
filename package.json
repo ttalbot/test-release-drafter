@@ -1,7 +1,7 @@
 {
   "name": "test-release-drafter",
   "version": "2.2.1",
-  "description": "awesome auto releasing project",
+  "description": "awesome auto releasing project ",
   "main": "index.js",
   "workspaces": [
     "packages/*"
