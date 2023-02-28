@@ -1,12 +1,12 @@
 {
   "name": "@ttalbot/pkg1",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "description": "",
   "main": "index.js",
   "author": "Thomas Talbot",
   "license": "MIT",
   "dependencies": {
-    "@ttalbot/pkg2": "*"
+    "@ttalbot/pkg2": "2.4.0"
   },
   "publishConfig": {
     "access": "public"
