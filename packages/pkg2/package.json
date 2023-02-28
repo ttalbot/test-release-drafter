@@ -4,5 +4,8 @@
   "description": "",
   "main": "index.js",
   "author": "Thomas Talbot",
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
 }
