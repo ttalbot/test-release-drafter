@@ -21,5 +21,8 @@
   "homepage": "https://github.com/ttalbot/test-release-drafter#readme",
   "volta": {
     "node": "18.14.0"
+  },
+  "devDependencies": {
+    "lerna": "^6.5.1"
   }
 }

@@ -6,6 +6,6 @@
   "author": "Thomas Talbot",
   "license": "MIT",
   "dependencies": {
-    "pkg2": "2.1.0"
+    "pkg2": "*"
   }
 }
