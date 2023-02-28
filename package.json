@@ -1,6 +1,6 @@
 {
   "name": "test-release-drafter",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "awesome auto releasing project",
   "main": "index.js",
   "workspaces": [
@@ -21,5 +21,8 @@
   "homepage": "https://github.com/ttalbot/test-release-drafter#readme",
   "volta": {
     "node": "18.14.0"
+  },
+  "devDependencies": {
+    "lerna": "^6.5.1"
   }
 }
