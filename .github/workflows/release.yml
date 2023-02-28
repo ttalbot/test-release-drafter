@@ -23,6 +23,7 @@ jobs:
         with:
           myToken: ${{ github.token }}
           exclude_types: "prerelease|release"
+
       - name: Extract version number
         run: |
           string="${{ steps.last_release.outputs.tag_name }}"
