@@ -7,6 +7,9 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
+      - uses: release-drafter/release-drafter@v5
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: "Get latest draft release "
         id: last_release
         uses: InsonusK/get-latest-release@v1.0.1
@@ -19,6 +22,3 @@ jobs:
           version=$(echo "$string" | grep -oP '(?<=@)[\d\.]+')
           export VERSION=$version
           echo "Version number is: $version"
-      - uses: release-drafter/release-drafter@v5
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
