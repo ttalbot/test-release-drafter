@@ -32,7 +32,7 @@ jobs:
 
       - name: publish to NPM
         run: |
-          npx lerna version ${{ env.RELEASE_VERSION }} --no-git-tag-version --force-publish --no-commit-hooks --yes --exact
+          npx lerna version ${{ env.RELEASE_VERSION }} --force-publish --no-commit-hooks --yes --exact
           npx lerna publish from-package --yes
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
