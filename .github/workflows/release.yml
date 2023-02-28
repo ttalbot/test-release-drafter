@@ -32,8 +32,8 @@ jobs:
       - uses: fregante/setup-git-user@v2
       - name: publish to NPM
         run: |
-          npx lerna version ${{ env.RELEASE_VERSION }} --force-publish --no-commit-hooks --yes --exact
-          npx lerna publish from-package --yes
+          npx lerna version ${{ env.RELEASE_VERSION }} --force-publish --no-commit-hooks --yes --exact --tag-version-prefix='fds@'
+          npx lerna publish from-package --yes --tag-version-prefix='fds@'
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
