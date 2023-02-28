@@ -7,7 +7,7 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      - name: "Get latest draft release"
+      - name: "Get latest draft release "
         id: last_release
         uses: InsonusK/get-latest-release@v1.0.1
         with:
