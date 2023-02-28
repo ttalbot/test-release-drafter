@@ -1,11 +1,11 @@
 {
-  "name": "pkg1",
+  "name": "@ttalbot/pkg1",
   "version": "2.2.1",
   "description": "",
   "main": "index.js",
   "author": "Thomas Talbot",
   "license": "MIT",
   "dependencies": {
-    "pkg2": "*"
+    "@ttalbot/pkg2": "*"
   }
 }
