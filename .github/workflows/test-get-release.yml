@@ -6,15 +6,22 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      - uses: cardinalby/git-get-release-action@v1
-        id: drafts
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: "Get latest draft release"
+        id: last_release
+        uses: InsonusK/get-latest-release@v1.0.1
         with:
-          draft: true
+          myToken: ${{ github.token }}
+          exclude_types: "prerelease|release"
+
+      - name: Extract version number
+        run: |
+          string="${{ steps.last_release.outputs.tag_name }}"
+          version=$(echo "$string" | grep -oP '(?<=@)[\d\.]+')
+          echo "RELEASE_VERSION=${version}" >> $GITHUB_ENV
+          echo "Version number is: $version"
+
       - name: "draft results"
-        if: steps.drafts.outputs.draft == true
+        if: steps.last_release.outputs.tag_name
         run: echo "SUCCESS"
-      - name: "draft results"
-        if: steps.drafts.outputs.draft == false
-        run: echo "FAIL"
+      - name: "echo result"
+        run: echo ${{ steps.last_release.outputs.tag_name }}
