@@ -1,0 +1,21 @@
+name: get draft
+on:
+  workflow_dispatch
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: cardinalby/git-get-release-action@v1.2.4
+        id: drafts
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          draft: true
+          searchLimit: 4
+      - name: "draft results"
+        if: steps.drafts.outputs.draft == true
+        run: echo "SUCCESS"
+      - name: "draft results"
+        if: steps.drafts.outputs.draft == false
+        run: echo "FAIL"
