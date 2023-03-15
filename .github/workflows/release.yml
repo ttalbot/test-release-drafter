@@ -31,7 +31,8 @@ jobs:
           echo "RELEASE_VERSION=${version}" >> $GITHUB_ENV
           echo "Version number is: $version"
 
-      - uses: fregante/setup-git-user@v2
+      - name: Setup git user
+        uses: fregante/setup-git-user@v2
 
       - name: publish to NPM
         run: |
